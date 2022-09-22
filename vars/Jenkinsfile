@@ -1,6 +1,6 @@
- @Library('pipeline-library-demo')_
+ @Library('shared-library')_
 
- stage('Demo') {
+ stage('sample') {
      echo 'Hello world'
      sayHello 'sudheer'
  }
