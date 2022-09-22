@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-deployment
+  name: web_deploy
   labels:
-    app: test
+    app: web
 spec:
   selector:
     matchLabels:
-      app: test
+      app: web
   replicas: 1
   strategy:
     type: RollingUpdate
   template:
     metadata:
       labels:
-        app: test
+        app: web
     spec:
       containers:
-       —name: test
+       —name: web
           image: sudheer1994/test:1.0.0
           ports:
            —containerPort: 3000
