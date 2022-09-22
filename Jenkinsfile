@@ -2,7 +2,7 @@
 
  stage('Demo') {
      echo 'Hello world'
-     sayHello 'Khadeer'
+     sayHello 'sudheer'
  }
  stage('test')
      wget https://github.com/aquasecurity/trivy/releases/download/v0.20.1/trivy_0.20.1_Linux-64bit.deb
